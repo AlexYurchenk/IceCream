@@ -1,0 +1,28 @@
+.overlay {
+    z-index: 99999;
+    @extend %center;
+    @extend %transition-common;
+
+    background-color: $overlay-bgc;
+    &.is-closed {
+        visibility: hidden;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+
+    justify-content: center;
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 250ms;
+    transition-timing-function: $cubic;
+    @media screen and (min-width: $tablet-container-width) {
+        justify-content: end;
+    }
+}

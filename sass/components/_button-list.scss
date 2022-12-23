@@ -1,0 +1,44 @@
+.button-list {
+    z-index: 3;
+    position: absolute;
+    top: 230px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    @media screen and (max-width: calc($tablet-container-width - 1px)) {
+        margin-left: 90px;
+        margin-right: auto;
+
+        & .button-list__item:first-child {
+            display: none;
+        }
+    }
+    @media screen and (min-width: $tablet-container-width) {
+        top: 100px;
+        right: -10px;
+    }
+    @media screen and (min-width: $desktop-container-width) {
+        top: 250px;
+    }
+}
+.button-list__item {
+    &:not(:last-child) {
+        margin-right: 9px;
+    }
+}
+.button-list__button {
+    @media screen and (max-width: calc($desktop-container-width - 1px)) {
+        .button-list & {
+            min-height: 24px;
+            padding-right: 13px;
+            padding-left: 13px;
+
+            font-size: 8px;
+            line-height: 1.25em;
+
+            font-family: $main-font-family;
+
+            font-weight: 400;
+        }
+    }
+}

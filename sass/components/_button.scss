@@ -1,0 +1,53 @@
+.button {
+    z-index: 9;
+    @extend %center;
+    justify-content: center;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31em;
+    color: $red;
+
+    background: $white;
+    border-radius: 22px;
+
+    min-height: 44px;
+
+    padding-right: 17px;
+    padding-left: 17px;
+
+    &--red {
+        @extend %center;
+        justify-content: center;
+
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.31em;
+        color: $white;
+
+        background: $red;
+        border-radius: 22px;
+
+        min-height: 44px;
+
+        padding-right: 17px;
+        padding-left: 17px;
+        &:hover,
+        &:focus {
+            background-color: $btn-red-hover-bgc;
+        }
+    }
+
+    &:focus,
+    &:hover {
+        background-color: $btn-hover-bgc;
+    }
+}
+.button__icon {
+    @extend %center;
+    height: 10px;
+    width: 10px;
+
+    margin-left: 14px;
+    stroke: currentColor;
+}

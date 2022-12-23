@@ -1,0 +1,38 @@
+.modal {
+    @extend %transition-common;
+    position: relative;
+    width: $mobile-modal-width;
+    min-height: 100%;
+    background-color: $modal-bgc;
+
+    padding-top: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    .overlay.is-closed & {
+        transform: scale(0.9);
+    }
+    @media screen and (min-width: $tablet-container-width) {
+        .overlay.is-closed & {
+            transform: translateX(100%);
+        }
+        position: fixed;
+        width: calc($mobile-modal-width + 30px);
+        transform: translateX(0%);
+    }
+}
+.modal__close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 8px;
+    margin-right: 8px;
+    width: 30px;
+    height: 30px;
+    color: $white;
+    display: inline-flex;
+}
+.modal__button {
+    width: 100%;
+    margin-bottom: 19px;
+}

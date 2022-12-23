@@ -1,0 +1,48 @@
+.header {
+    width: 100%;
+    background-color: $header-bgc;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    @media screen and (min-width: $tablet-container-width) {
+        padding-top: 37px;
+        padding-bottom: 15px;
+    }
+}
+.header__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media screen and (min-width: $tablet-container-width) and (max-width: calc($desktop-container-width - 1px)) {
+        justify-content: start;
+    }
+}
+.header__button {
+    min-width: 160px;
+    @media screen and (max-width: calc($tablet-container-width - 1px)) {
+        display: none;
+    }
+
+    @media screen and (min-width: $tablet-container-width) and (max-width: calc($desktop-container-width - 1px)) {
+        margin-left: 30px;
+    }
+}
+.header__control {
+    z-index: 9;
+    @media screen and (min-width: $tablet-container-width) {
+        margin-left: auto;
+    }
+    @media screen and (min-width: $desktop-container-width) {
+        display: none;
+    }
+}
+.header__main-nav {
+    position: relative;
+    z-index: 3;
+    display: none;
+    @media screen and (min-width: $desktop-container-width) {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        width: auto;
+    }
+}

@@ -1,0 +1,41 @@
+.description__count {
+    font-family: $title-font-family;
+    position: relative;
+    z-index: 2;
+
+    font-size: 28px;
+    line-height: 1.142em;
+
+    text-transform: uppercase;
+    text-align: end;
+
+    color: #d41443;
+    @media screen and (min-width: $desktop-container-width) {
+        font-size: 46px;
+        line-height: 1.152em;
+    }
+}
+.description__text {
+    font-size: 8px;
+    line-height: 1.25em;
+    text-align: end;
+    color: $white;
+    @media screen and (min-width: $desktop-container-width) {
+        font-size: 14px;
+        line-height: 1.285em;
+    }
+}
+.description__figure {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+
+    background: $white;
+    @media screen and (min-width: $desktop-container-width) {
+        width: 30px;
+        height: 30px;
+    }
+}

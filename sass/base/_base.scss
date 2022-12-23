@@ -1,0 +1,47 @@
+img {
+    display: block;
+
+    max-width: 100%;
+    height: auto;
+}
+button {
+    border: none;
+    &:hover,
+    &:focus {
+        cursor: pointer;
+    }
+}
+
+body {
+    background-color: $white;
+    letter-spacing: $main-letter-spacing;
+    color: $main-text-color;
+    font-family: $main-font-family;
+    fill: $main-text-color;
+    font-size: 16px;
+    &.model-is-open {
+        overflow-y: hidden;
+    }
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    margin: 0%;
+    padding: 0%;
+}
+h1,
+h2,
+h3,
+h4 {
+    margin: 0%;
+}
+p {
+    margin: 0%;
+}
+address {
+    font-style: normal;
+}

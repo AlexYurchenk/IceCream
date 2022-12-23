@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Titan+One&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./css/main.min.css" />
+        <title>IceCream</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="header__wrapper">
+                    <a class="logo" href="">
+                        <svg class="logo__icon">
+                            <use href="./img/sprite.svg#icon-icecream"></use>
+                        </svg>
+                        icecream
+                    </a>
+                    <ul class="main-nav header__main-nav">
+                        <li class="main-nav__item">
+                            <a
+                                class="main-nav__link main-nav__link--current"
+                                href=""
+                                >Home</a
+                            >
+                        </li>
+                        <li class="main-nav__item">
+                            <a class="main-nav__link" href="">About us</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a class="main-nav__link" href="">How it’s made?</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a class="main-nav__link" href="">Our products</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a class="main-nav__link" href="">Contact</a>
+                        </li>
+                    </ul>
+                    <button
+                        data-mobil-modal-open
+                        type="button"
+                        class="header__control icon-button"
+                    >
+                        <svg class="icon-button__icon">
+                            <use href="./img/sprite.svg#burger"></use>
+                        </svg>
+                    </button>
+                    <button type="button" class="button header__button">
+                        Buy now
+                        <svg class="button__icon">
+                            <use href="./img/sprite.svg#arrow-reght"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <section class="hero">
+            <div class="container">
+                <div class="hero__wrapper">
+                    <div class="hero__ice-cream">
+                        <h1 class="hero__hero">
+                            ice cream <br />
+                            made with
+                            <span class="hero__hero--bold">passion</span>
+                        </h1>
+                        <ul class="hero__button-list button-list">
+                            <li class="button-list__item">
+                                <button class="button-list__button button--red">
+                                    Products
+                                </button>
+                            </li>
+                            <li class="button-list__item">
+                                <button class="button-list__button button">
+                                    How it’s made?
+                                </button>
+                            </li>
+                        </ul>
+                        <picture class="hero__milk">
+                            <source
+                                srcset="./img/hero/milk/desktop/1.png"
+                                media="(min-width: 1050px)"
+                            />
+                            <source
+                                srcset="./img/hero/milk/tab/1.png"
+                                media="(min-width: 700px)"
+                            />
+
+                            <img
+                                src="./img/hero/milk/tab/1.png"
+                                alt="ice-cream"
+                            />
+                        </picture>
+                        <div class="hero__info">
+                            <div class="info__wrapper">
+                                <p class="info__text">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et
+                                </p>
+                                <button
+                                    type="button"
+                                    class="icon-button icon-button--tiny"
+                                >
+                                    <svg class="icon-button__icon">
+                                        <use
+                                            href="./img/sprite.svg#arrow-reght"
+                                        ></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="hero__circle"></div>
+                        <picture class="hero__img">
+                            <source
+                                srcset="./img/hero/icecream/desktop/1.png"
+                                media="(min-width: 1050px)"
+                            />
+                            <source
+                                srcset="./img/hero/icecream/tab/1.png"
+                                media="(min-width: 700px)"
+                            />
+                            <source
+                                srcset="./img/hero/icecream/mobile/1.png"
+                                media="(max-width: 699px)"
+                            />
+
+                            <img
+                                src="./img/hero/icecream/desktop/1.png"
+                                alt="ice-cream"
+                            />
+                        </picture>
+
+                        <ul class="hero__list">
+                            <li class="meta__item">
+                                <div class="description__figure"></div>
+                                <span class="description__count">16</span>
+                                <p class="description__text">cafes</p>
+                            </li>
+                            <li class="meta__item">
+                                <div class="description__figure"></div>
+                                <span class="description__count">23</span>
+                                <p class="description__text">food trucks</p>
+                            </li>
+                        </ul>
+                        <picture class="hero__girl">
+                            <source
+                                srcset="./img/hero/girl/desktop/1.png"
+                                media="(min-width: 1050px)"
+                            />
+                            <source
+                                srcset="./img/hero/girl/tab/1.png"
+                                media="(min-width: 700px)"
+                            />
+
+                            <img
+                                src="./img/hero/girl/tab/1.png"
+                                alt="ice-cream"
+                            />
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer"></footer>
+        <div data-mobil-modal class="overlay is-closed">
+            <div class="modal">
+                <button data-mobil-modal-close class="icon-button modal__close">
+                    <svg class="icon-button__icon">
+                        <use href="./img/sprite.svg#close"></use>
+                    </svg>
+                </button>
+                <button type="button" class="button modal__button">
+                    Buy now
+                    <svg class="button__icon">
+                        <use href="./img/sprite.svg#arrow-reght"></use>
+                    </svg>
+                </button>
+                <ul class="main-nav modal__main-nav">
+                    <li class="main-nav__item">
+                        <a
+                            class="main-nav__link main-nav__link--current"
+                            href=""
+                            >Home</a
+                        >
+                    </li>
+                    <li class="main-nav__item">
+                        <a class="main-nav__link" href="">About us</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a class="main-nav__link" href="">How it’s made?</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a class="main-nav__link" href="">Our products</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a class="main-nav__link" href="">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <script src="./js/main.js"></script>
+    </body>
+</html>

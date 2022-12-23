@@ -1,0 +1,29 @@
+.icon-button {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $red;
+    border-radius: 50%;
+    &--tiny {
+        width: 18px;
+        height: 18px;
+        background-color: $white;
+        margin-top: 4px;
+        @media screen and (min-width: $desktop-container-width) {
+            width: 26px;
+            height: 26px;
+        }
+    }
+}
+.icon-button__icon {
+    .icon-button--tiny & {
+        width: 50%;
+        width: 50%;
+    }
+    stroke: currentColor;
+    fill: currentColor;
+    color: currentColor;
+}
