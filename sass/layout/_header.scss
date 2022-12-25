@@ -1,4 +1,6 @@
 .header {
+    position: fixed;
+    z-index: 10;
     width: 100%;
     background-color: $header-bgc;
     padding-top: 10px;
@@ -6,6 +8,8 @@
     @media screen and (min-width: $tablet-container-width) {
         padding-top: 37px;
         padding-bottom: 15px;
+        position: initial;
+        z-index: 0;
     }
 }
 .header__wrapper {

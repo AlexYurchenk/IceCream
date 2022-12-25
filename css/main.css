@@ -336,13 +336,15 @@ address {
 }
 
 .icon-button__icon {
+  width: 50%;
+  height: 50%;
   stroke: currentColor;
   fill: currentColor;
   color: currentColor;
 }
 .icon-button--tiny .icon-button__icon {
   width: 50%;
-  width: 50%;
+  height: 50%;
 }
 
 .logo {
@@ -407,6 +409,120 @@ address {
   }
 }
 
+.product {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product__image {
+  position: absolute;
+  top: -135px;
+  width: 249px;
+  z-index: 9;
+}
+@media screen and (min-width: 700px) {
+  .product__image {
+    width: 220px;
+    top: -100px;
+  }
+}
+@media screen and (min-width: 1050px) {
+  .product__image {
+    width: 100%;
+    top: -200px;
+  }
+}
+
+.product__meta, .product__meta--green, .product__meta--brown {
+  padding-top: 161px;
+  background: #ffb8ca;
+  border-radius: 24px;
+  padding-right: 40px;
+  padding-left: 40px;
+  padding-bottom: 40px;
+}
+.product__meta--brown {
+  background-color: #f0d1a5;
+}
+.product__meta--green {
+  background-color: #c2e297;
+}
+@media screen and (min-width: 700px) {
+  .product__meta, .product__meta--green, .product__meta--brown {
+    padding-right: 11px;
+    padding-left: 11px;
+  }
+}
+@media screen and (min-width: 1050px) {
+  .product__meta, .product__meta--green, .product__meta--brown {
+    padding-right: 44px;
+    padding-left: 44px;
+    padding-bottom: 50px;
+  }
+}
+
+.product__title {
+  font-family: Titan One;
+  font-size: 20px;
+  line-height: 1.15em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+@media screen and (min-width: 1050px) {
+  .product__title {
+    font-size: 30px;
+  }
+}
+
+.product__description-list {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.product__description {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.52em;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 700px) {
+  .product__description {
+    line-height: 1.76em;
+    margin-bottom: 40px;
+  }
+}
+@media screen and (min-width: 1050px) {
+  .product__description {
+    font-size: 16px;
+    margin-bottom: 62px;
+  }
+}
+
+.product__button {
+  background-color: #ffffff;
+  margin-right: auto;
+  margin-left: auto;
+}
+.product__button > svg {
+  width: 30%;
+  height: 30%;
+}
+
 .button-list {
   z-index: 3;
   position: absolute;
@@ -454,6 +570,35 @@ address {
     font-family: DM Sans;
     font-weight: 400;
   }
+}
+
+.description-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.description-list__item {
+  margin-right: 4px;
+}
+.description-list__item:last-child {
+  margin: 0%;
+}
+
+.description-list__button, .description-list__button--current {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #ffffff;
+}
+.description-list__button--current {
+  background-color: #d41443;
 }
 
 .modal {
@@ -664,6 +809,8 @@ address {
 }
 
 .header {
+  position: fixed;
+  z-index: 10;
   width: 100%;
   background-color: #ffb8ca;
   padding-top: 10px;
@@ -673,6 +820,8 @@ address {
   .header {
     padding-top: 37px;
     padding-bottom: 15px;
+    position: initial;
+    z-index: 0;
   }
 }
 
@@ -742,7 +891,7 @@ address {
 }
 
 .hero {
-  padding-top: 17px;
+  padding-top: 77px;
   background-color: #ffb8ca;
   overflow: hidden;
 }
@@ -964,5 +1113,110 @@ address {
   .info__text {
     font-size: 14px;
     line-height: 1.4em;
+  }
+}
+
+.products {
+  padding-top: 121px;
+  padding-bottom: 98px;
+  width: 100%;
+}
+@media screen and (min-width: 700px) {
+  .products {
+    padding-top: 112px;
+    padding-bottom: 122px;
+  }
+}
+@media screen and (min-width: 1050px) {
+  .products {
+    padding-top: 127px;
+    padding-bottom: 119px;
+  }
+}
+
+.products__title, .products__title--big {
+  font-family: Titan One;
+  font-size: 18px;
+  line-height: 1.166em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffa5ba;
+}
+.products__title--big {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 34px;
+  line-height: 1.147em;
+  margin-top: 15px;
+  color: #d41443;
+}
+@media screen and (min-width: 700px) {
+  .products__title, .products__title--big {
+    font-size: 26px;
+    line-height: 1.153em;
+  }
+  .products__title--big {
+    font-size: 48px;
+  }
+}
+@media screen and (min-width: 1050px) {
+  .products__title, .products__title--big {
+    font-size: 30px;
+    line-height: 1.133em;
+  }
+  .products__title--big {
+    font-size: 58px;
+  }
+}
+
+.products__list {
+  margin-top: 144px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media screen and (min-width: 700px) {
+  .products__list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 160px;
+  }
+}
+@media screen and (min-width: 1050px) {
+  .products__list {
+    margin-top: 260px;
+  }
+}
+
+.products__item:not(:last-child) {
+  margin-bottom: 140px;
+}
+@media screen and (min-width: 700px) {
+  .products__item {
+    width: calc((100% - 40px) / 3);
+  }
+  .products__item:not(:last-child) {
+    margin-bottom: 0%;
+    margin-right: 20px;
+  }
+}
+@media screen and (min-width: 1050px) {
+  .products__item {
+    width: calc((100% - 48px) / 3);
+  }
+  .products__item:not(:last-child) {
+    margin-right: 24px;
   }
 }/*# sourceMappingURL=main.css.map */

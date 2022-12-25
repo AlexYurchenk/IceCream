@@ -19,9 +19,11 @@
     }
 }
 .icon-button__icon {
+    width: 50%;
+    height: 50%;
     .icon-button--tiny & {
         width: 50%;
-        width: 50%;
+        height: 50%;
     }
     stroke: currentColor;
     fill: currentColor;

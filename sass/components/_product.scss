@@ -1,0 +1,92 @@
+.product {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.product__image {
+    position: absolute;
+    top: -135px;
+    width: 249px;
+    z-index: 9;
+    @media screen and (min-width: $tablet-container-width) {
+        width: 220px;
+        top: -100px;
+    }
+    @media screen and (min-width: $desktop-container-width) {
+        width: 100%;
+        top: -200px;
+    }
+}
+.product__meta {
+    padding-top: 161px;
+    background: $header-bgc;
+    border-radius: 24px;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-bottom: 40px;
+    &--brown {
+        @extend .product__meta;
+        background-color: $coffee-bgc;
+    }
+    &--green {
+        @extend .product__meta;
+        background-color: $green;
+    }
+    @media screen and (min-width: $tablet-container-width) {
+        padding-right: 11px;
+        padding-left: 11px;
+    }
+    @media screen and (min-width: $desktop-container-width) {
+        padding-right: 44px;
+        padding-left: 44px;
+        padding-bottom: 50px;
+    }
+}
+.product__title {
+    font-family: $title-font-family;
+    font-size: 20px;
+    line-height: 1.15em;
+
+    text-align: center;
+
+    text-transform: uppercase;
+
+    color: #ffffff;
+    @media screen and (min-width: $desktop-container-width) {
+        font-size: 30px;
+    }
+}
+.product__description-list {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.product__description {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.52em;
+
+    text-align: center;
+
+    color: $white;
+    margin-bottom: 30px;
+    @media screen and (min-width: $tablet-container-width) {
+        line-height: 1.76em;
+        margin-bottom: 40px;
+    }
+    @media screen and (min-width: $desktop-container-width) {
+        font-size: 16px;
+        margin-bottom: 62px;
+    }
+}
+.product__button {
+    background-color: $white;
+
+    margin-right: auto;
+    margin-left: auto;
+    & > svg {
+        width: 30%;
+        height: 30%;
+    }
+}

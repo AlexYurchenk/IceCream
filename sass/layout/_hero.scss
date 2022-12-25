@@ -1,5 +1,5 @@
 .hero {
-    padding-top: 17px;
+    padding-top: 77px;
     background-color: $header-bgc;
     overflow: hidden;
     @media screen and (min-width: $tablet-container-width) {
@@ -7,8 +7,7 @@
         overflow: visible;
     }
 }
-.hero__wrapper {
-}
+
 .hero__ice-cream {
     width: 100%;
     display: flex;

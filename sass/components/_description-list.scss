@@ -1,0 +1,21 @@
+.description-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.description-list__item {
+    margin-right: 4px;
+    &:last-child {
+        margin: 0%;
+    }
+}
+.description-list__button {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: $white;
+    &--current {
+        @extend .description-list__button;
+        background-color: $red;
+    }
+}
