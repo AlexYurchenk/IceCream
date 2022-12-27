@@ -8,6 +8,18 @@
     &:last-child {
         margin: 0%;
     }
+    &--small {
+        margin-right: 10px;
+        &:last-child {
+            margin: 0%;
+        }
+    }
+    &--large {
+        margin-right: 18px;
+        &:last-child {
+            margin: 0%;
+        }
+    }
 }
 .description-list__button {
     width: 6px;
@@ -18,4 +30,23 @@
         @extend .description-list__button;
         background-color: $red;
     }
+    &--small {
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: $red;
+    }
+    &--large {
+        min-width: 12px;
+        min-height: 12px;
+        border-radius: 50%;
+        background: $dots-bgc;
+        &:has(> .description-list__icon) {
+            background-color: transparent;
+        }
+    }
+}
+.description-list__icon {
+    height: 13px;
+    width: 13px;
 }

@@ -1,0 +1,76 @@
+.location {
+    background: linear-gradient(
+        $white 84px,
+        $white 84px,
+        $technology-bgc 84px 100%
+    );
+    width: 100%;
+    padding-bottom: 113px;
+    @media screen and (min-width: $tablet-container-width) {
+        background: linear-gradient(
+            $white 78px,
+            $white 78px,
+            $technology-bgc 78px 100%
+        );
+        padding-bottom: 158px;
+    }
+    @media screen and (min-width: $desktop-container-width) {
+        background: linear-gradient(
+            $white 102px,
+            $white 10xpx,
+            $technology-bgc 102px 100%
+        );
+        padding-bottom: 165px;
+    }
+}
+.location__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 54px;
+    @media screen and (min-width: $tablet-container-width) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    @media screen and (min-width: $desktop-container-width) {
+        gap: 31px;
+    }
+}
+.location__item {
+    max-width: 220px;
+    margin-bottom: 20px;
+    &:last-child {
+        margin-bottom: 0%;
+    }
+    @media screen and (min-width: $tablet-container-width) {
+        max-width: calc((100% - 40px) / 3);
+        margin-bottom: 0%;
+    }
+    @media screen and (min-width: $desktop-container-width) {
+        max-width: calc((100% - 62px) / 3);
+    }
+}
+.location__button-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: auto;
+    @media screen and (min-width: $tablet-container-width) {
+        flex-direction: row;
+        gap: 15px;
+    }
+}
+.location__button {
+    min-width: 161.45px;
+    @media screen and (min-width: $tablet-container-width) {
+        min-width: 191.45px;
+        margin: 0%;
+    }
+    @media screen and (min-width: $desktop-container-width) {
+        min-width: 198px;
+    }
+}

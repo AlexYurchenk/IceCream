@@ -1,17 +1,22 @@
 .icon-button {
     width: 40px;
     height: 40px;
-    background-color: transparent;
+    background-color: inherit;
     display: flex;
     align-items: center;
     justify-content: center;
     color: $red;
     border-radius: 50%;
+
     &--tiny {
         width: 18px;
         height: 18px;
         background-color: $white;
         margin-top: 4px;
+        &:hover,
+        &:focus {
+            background-color: $btn-hover-bgc;
+        }
         @media screen and (min-width: $desktop-container-width) {
             width: 26px;
             height: 26px;
@@ -19,13 +24,14 @@
     }
 }
 .icon-button__icon {
-    width: 50%;
-    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     .icon-button--tiny & {
         width: 50%;
         height: 50%;
     }
     stroke: currentColor;
-    fill: currentColor;
+    fill: none;
     color: currentColor;
 }

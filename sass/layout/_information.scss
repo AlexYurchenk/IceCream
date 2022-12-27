@@ -1,0 +1,31 @@
+.information {
+    width: 100%;
+
+    background: $technology-bgc;
+    padding-bottom: 97px;
+}
+.information__list {
+    @media screen and (min-width: $tablet-container-width) {
+        display: flex;
+        gap: 60px;
+    }
+    @media screen and (min-width: $desktop-container-width) {
+        display: flex;
+        gap: 30px;
+    }
+}
+.information__item {
+    @media screen and (max-width: calc($tablet-container-width - 1px)) {
+        margin-bottom: 38px;
+    }
+    &:last-child {
+        margin: 0;
+    }
+    @media screen and (min-width: $tablet-container-width) {
+        width: calc((100% - 120px) / 3);
+        margin-bottom: 0px;
+    }
+    @media screen and (min-width: $desktop-container-width) {
+        width: calc((100% - 60px) / 3);
+    }
+}

@@ -25,6 +25,17 @@
     &:not(:last-child) {
         margin-right: 9px;
     }
+    .location__button-list > & {
+        &:not(:last-child) {
+            margin-right: 0%;
+            margin-bottom: 10px;
+        }
+        @media screen and (min-width: $tablet-container-width) {
+            &:not(:last-child) {
+                margin-bottom: 0%;
+            }
+        }
+    }
 }
 .button-list__button {
     @media screen and (max-width: calc($desktop-container-width - 1px)) {

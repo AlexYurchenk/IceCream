@@ -1,0 +1,32 @@
+.social-list {
+    display: flex;
+    align-items: center;
+    gap: 28.24px;
+    @media screen and (min-width: $tablet-container-width) {
+        gap: 30px;
+    }
+    @media screen and (min-width: $desktop-container-width) {
+        gap: 24px;
+    }
+}
+.social-list__link {
+    width: 32px;
+    height: 32px;
+    color: $circle-bgc;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover,
+    &:focus {
+        color: $red;
+    }
+    @media screen and (min-width: $tablet-container-width) {
+        width: 34px;
+        height: 34px;
+    }
+}
+.social-list__icon {
+    height: 100%;
+    fill: currentColor;
+}

@@ -1,0 +1,120 @@
+.review {
+    padding-top: 80px;
+    padding-bottom: 86px;
+    @media screen and (min-width: $tablet-container-width) and (max-width: calc($desktop-container-width - 1px)) {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+    @media screen and (min-width: $desktop-container-width) and (max-width: calc($desktop-container-width - 1px)) {
+        padding-top: 123px;
+        padding-bottom: 132px;
+    }
+}
+.review__image {
+    margin-right: auto;
+    margin-left: auto;
+
+    margin-bottom: 29px;
+    @media screen and (min-width: $tablet-container-width) and (max-width: calc($desktop-container-width - 1px)) {
+        margin-bottom: 19px;
+    }
+    @media screen and (min-width: $desktop-container-width) and (max-width: calc($desktop-container-width - 1px)) {
+        margin-bottom: 15px;
+    }
+}
+.review__wrapper {
+    position: relative;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 43px;
+    padding-bottom: 26px;
+    width: 100%;
+    background-color: $review-bgc;
+    @media screen and (min-width: $tablet-container-width) and (max-width: calc($desktop-container-width - 1px)) {
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 30px;
+        padding-bottom: 28px;
+    }
+    @media screen and (min-width: $desktop-container-width) and (max-width: calc($desktop-container-width - 1px)) {
+        padding-left: 52px;
+        padding-right: 52px;
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        width: 54px;
+        height: 40px;
+
+        background-image: url('../../img/apostrophe.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        @media screen and (min-width: $tablet-container-width) and (max-width: calc($desktop-container-width - 1px)) {
+            top: 10px;
+            left: 40px;
+        }
+        @media screen and (min-width: $desktop-container-width) and (max-width: calc($desktop-container-width - 1px)) {
+            top: 30px;
+        }
+    }
+}
+.review__pattern {
+    height: 100%;
+    background-image: repeating-linear-gradient(
+        $review-bgc 0px,
+        $review-bgc 28px,
+        $lines-color 29px
+    );
+}
+.review__content {
+    position: relative;
+    z-index: 2;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 2.55em;
+
+    text-align: center;
+
+    color: $black;
+    @media screen and (min-width: $tablet-container-width) and (max-width: calc($desktop-container-width - 1px)) {
+        font-size: 14px;
+        line-height: 2.16em;
+    }
+    @media screen and (min-width: $desktop-container-width) and (max-width: calc($desktop-container-width - 1px)) {
+        font-size: 16px;
+        line-height: 1.86em;
+    }
+}
+.review__description-list {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+    @media screen and (min-width: $tablet-container-width) and (max-width: calc($desktop-container-width - 1px)) {
+        margin-top: 24px;
+    }
+    @media screen and (min-width: $desktop-container-width) and (max-width: calc($desktop-container-width - 1px)) {
+        margin-top: 35px;
+    }
+}
+.review__owner {
+    margin-top: 18px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.86em;
+
+    text-align: center;
+
+    color: #000000;
+    @media screen and (min-width: $tablet-container-width) and (max-width: calc($desktop-container-width - 1px)) {
+        font-size: 16px;
+    }
+    @media screen and (min-width: $desktop-container-width) and (max-width: calc($desktop-container-width - 1px)) {
+        margin-top: 35px;
+        font-size: 20px;
+    }
+}
